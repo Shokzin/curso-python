@@ -53,3 +53,33 @@ if __name__ == '__main__':
     res = quadrado(valores)
     for f in res:
         print(f)
+
+#
+
+def contar(num=11, caractere='*'):
+    for i in range(1, num):
+        print(caractere)
+
+if __name__ == '__main__':
+    contar() # Chama a função contar com os valores padrão
+    contar(caractere='&') # Chama a função contar com o caractere '&' e o número padrão
+    contar(num=5) # Chama a função contar com o número 5 e o caractere padrão
+    contar(3, '#') # Chama a função contar com o número 3 e o caractere '#'
+
+#
+
+x = 5
+y = 6
+z = 3
+
+def soma_mult(a, b, c = 0):
+    if c == 0:
+        return a * b
+    else:
+        return a + b + c
+    
+if __name__ == '__main__':
+    res =  soma_mult(x, y)
+    print(res)
+    res = soma_mult(x, y, z)
+    print(res)
